@@ -1,3 +1,4 @@
+
 .textBlur {
     color: transparent;
     text-shadow: 0 0 1px #202122;
@@ -7,9 +8,7 @@
     box-shadow: none;
 }
 
-a:hover {
-    color: red !important;
-}
+
 
 .dropdown:hover .dropdown-menu {
     display: block;

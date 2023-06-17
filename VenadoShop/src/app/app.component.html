@@ -1,9 +1,12 @@
-<header>
+<header> <!--Creamos una barra de navegacion, un header y una sección de productos utilizando  bootstrap
+  https://getbootstrap.com/docs/4.3/components/navbar/
+ -->
+
   <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-top ">
     <div class="container">
       <a class="navbar-brand fs-2 fw-bold " href="#"><i class="fa fa-cart-shopping fs-2"
-          style="color: #f54242;"></i><span class="textBlur">Shopwise</span></a>
+          style="color: #ec670f;"></i><span > VenadoShop</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <!--Toggle  -->
@@ -149,6 +152,10 @@
 </header>
 <section id="product">
   <div class="container">
+  <!-- Es una directiva en angular que se usa para representar el componente
+  asociado con la ruta actual.Actúa como marcador de posición donde el componente se basa en
+  en la URL actual.En este código, se utiliza para representar el componente del producto en la sección con
+  ID "Producto".-->
     <router-outlet></router-outlet>
   </div>
 </section>

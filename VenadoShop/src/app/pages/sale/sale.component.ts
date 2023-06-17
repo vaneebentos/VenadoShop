@@ -53,7 +53,7 @@ export class SaleComponent implements OnInit {
     this.productService.cartAddedSubject.next(true);
     this.productService.makeSale( this.saleObj).subscribe((res: any) => {
       if (res.result) {
-        alert("Sale Success")
+        alert("Compra Exitosa")
         this.loadCart();
         this.productService.cartAddedSubject.next(true);
       }

@@ -3,7 +3,7 @@
         <div class="CartContainer">
             <div class="row">
               <div class="col-12">
-                <h3>Cart Items</h3>
+                <h3>Artículos Seleccionados</h3>
               </div> 
             </div>
             <div class="row pt-1" *ngFor="let cart of cartProducts"> 
@@ -20,7 +20,7 @@
                {{ cart.productPrice}}
               </div>
               <div class="col-2 text-end">
-                <button class="btn btn-sm btn-danger" (click)="RemoveItem(cart.cartId)">Remove</button>
+                <button class="btn btn-sm btn-danger" (click)="RemoveItem(cart.cartId)">Eliminar</button>
                </div>
             </div>
            
@@ -50,7 +50,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <button class="btn btn-lg btn-success" (click)="makeSale()"> Make Sale</button>
+                    <button class="btn btn-lg btn-success" (click)="makeSale()"> Confirmar Compra</button>
                 </div>
             </div>
              

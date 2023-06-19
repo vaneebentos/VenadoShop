@@ -6,7 +6,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-top ">
     <div class="container">
       <a class="navbar-brand fs-2 fw-bold " href="#"><i class="fa fa-cart-shopping fs-2"
-          style="color: #ec670f;"></i><span > VenadoShop</span></a>
+          style="color: #0f94ec;"></i><span > VenadoShop</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <!--Toggle  -->
@@ -15,69 +15,17 @@
       <!-- Nav Items -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0  text-center ">
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fw-semibold text-uppercase  me-1 text-danger" href="#"
-              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              home
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Option</a></li>
-              <li><a class="dropdown-item" href="#">Option</a></li>
-
-              <li><a class="dropdown-item" href="#">Option</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle redHover fw-semibold text-uppercase text-black  me-1" href="#"
-              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              pages
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Option</a></li>
-              <li><a class="dropdown-item" href="#">Option</a></li>
-
-              <li><a class="dropdown-item" href="#">Option</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fw-semibold text-uppercase text-black  me-1" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              product
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Option</a></li>
-              <li><a class="dropdown-item" href="#">Option</a></li>
-
-              <li><a class="dropdown-item" href="#">Option</a></li>
-            </ul>
-          </li>
           <li class="nav-item dropdown fw-semibold text-uppercase text-black  me-1">
-            <a class="nav-link dropdown-toggle fw-semibold text-uppercase text-black  me-1" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              blog
-            </a>
+            
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Option</a></li>
-              <li><a class="dropdown-item" href="#">Option</a></li>
-
-              <li><a class="dropdown-item" href="#">Option</a></li>
+             
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fw-semibold text-uppercase text-black  me-1" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              shop
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Option</a></li>
-              <li><a class="dropdown-item" href="#">Option</a></li>
-
-              <li><a class="dropdown-item" href="#">Option</a></li>
-            </ul>
+           
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold text-uppercase text-black  me-1" href="#">Contact us</a>
+            <a class="nav-link fw-semibold text-uppercase text-black  me-1" href="#">Contacto</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle cart fw-semibold text-uppercase text-black  me-1" href="#"
@@ -92,11 +40,9 @@
               <div class="CartContainer">
                 <div class="row">
                   <div class="col-6">
-                    Your Cart
+                    Tu Compras
                   </div>
-                  <div class="col-6 text-end text-danger">
-                    Remove All
-                  </div>
+                 
                 </div>
                 <div class="row pt-1" *ngFor="let cart of cartProducts"> 
                   <div class="col-4">
@@ -139,7 +85,7 @@
                 </div>
                 <div class="row">
                   <div class="col-12 text-end">
-                    <button class="btn btn-sm btn-success" (click)="redirectToSale()">Checkout</button>
+                    <button class="btn btn-sm btn-success" (click)="redirectToSale()">Ver Carrito</button>
                   </div>
                 </div> 
               </div>

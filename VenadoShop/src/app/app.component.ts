@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
   subTotal: number = 0;
   constructor(private productService: ProductService, private router: Router) {
     this.productService.cartAddedSubject.subscribe(res=> {
-      debugger;
       this.loadCart();
     })
   }
@@ -21,6 +20,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.loadCart();
   }
+  
   redirectToSale() {
     this.router.navigateByUrl("/sale");
   }
@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
       this.cartProducts.forEach(element => {
           this.subTotal =  this.subTotal + element.productPrice;
       });
-      debugger;
     })
   }
 }

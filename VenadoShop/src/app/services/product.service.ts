@@ -8,9 +8,9 @@ import { Observable, Subject } from 'rxjs';
 export class ProductService {
 
 /* `public CartadDedSubject` es una propiedad de la clase 'Productservice' que crea una nueva instancia de
-La clase `Asunto 'con un parámetro de tipo booleano.Este tema se puede utilizar para emitir eventos y
-Notifique a los suscriptores cuando se agrega un producto al carrito.El `CartadDedSubject` se puede suscribirse a
-En otros componentes o servicios para recibir actualizaciones cuando se agrega un producto al carrito.*/
+La clase `Subject 'con un parámetro de tipo booleano.Este tema se puede utilizar para emitir eventos y
+Notifique a los suscriptores cuando se agrega un producto al carrito.El `CartaddedSubject` se puede suscribirse a
+en otros componentes o servicios para recibir actualizaciones cuando se agrega un producto al carrito.*/
   public cartAddedSubject = new Subject<boolean>();
 
 /**
@@ -30,7 +30,6 @@ En otros componentes o servicios para recibir actualizaciones cuando se agrega u
  */
 
   getAllProducts(): Observable<any[]> {
-    debugger;
     return this.http.get<any[]>("http://onlinetestapi.gerasim.in/api/Ecomm/GetAllProducts");
   }
 

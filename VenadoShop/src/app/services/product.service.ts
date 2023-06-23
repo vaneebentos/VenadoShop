@@ -9,16 +9,17 @@ export class ProductService {
 
 /* `public cartAddedSubject ` es una propiedad de la clase 'Productservice' que crea una nueva instancia de
 La clase `Subject 'con un parámetro de tipo booleano,se usa para emitir eventos y
-notifique a los suscriptores cuando se agrega un producto al carrito.El `cartAddedSubject ` se puede suscribir
-en otros componentes o servicios para recibir actualizaciones cuando se agrega un producto al carrito.*/
+notificar  a los suscriptores cuando se agrega un producto al carrito.
+El `cartAddedSubject ` se puede suscribir en otros componentes o servicios para recibir 
+actualizaciones cuando se agrega un producto al carrito.*/
   public cartAddedSubject = new Subject<boolean>();
 
 /**
-* Esta es una función de constructor que toma en una instancia de la clase HttpClient como parámetro y
+* Esta es una función de constructor que toma en una instancia de la clase httpclient como parámetro y
  * lo asigna a una propiedad privada.
- * @param {httpclient} http - el parámetro `http` es una instancia de la clase` httpclient`, que es
- * Se utiliza para realizar solicitudes HTTP en aplicaciones de angular.Le permite enviar solicitudes a
- *  un servidor y recibir respuestas en una variedad de formatos, como JSON, XML o texto plano.
+ * @param {httpclient} http - el parámetro `http` es una instancia de la clase` httpclient`, que se utiliza para 
+ * realizar solicitudes HTTP en aplicaciones de angular.Le permite enviar solicitudes a
+ * un servidor y recibir respuestas en una variedad de formatos, como JSON, XML o texto plano.
  */
   constructor(private http: HttpClient) { }
 

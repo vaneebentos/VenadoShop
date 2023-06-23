@@ -22,7 +22,7 @@
               <div class="col-2 text-end">
                {{ cart.productPrice}}
               </div>
-            <!--El botón con el texto "Eliminar"  se hace clic en el ,se llama la función "RemoTItem ()" 
+            <!--El botón con el texto "Eliminar"  se hace clic en el ,se llama la función "RemoveItem ()" 
               Pasando el parámetro"cart.cartId".es parte de una función de carrito ,donde el usuario puede
              eliminar los artículos de su carrito.--> 
               <div class="col-2 text-end">
@@ -52,16 +52,16 @@
                 <div class="Subtotal">Sub-Total</div>
                 <div> <small> 2 items</small></div>
               </div>
-              <!--La variable `subtotal`se está interpolando utilizando la  (`{{}}`) para mostrar el valor
-               La clase 'Col-4` se usa para definir el ancho del columna,
+              <!--interpolacion de la variable subTotal, que muestra el precio subtotal
+               La clase 'col-4` se usa para definir el ancho del columna,
                y la clase `text-end` se usa para alinear el texto,de lado derecho
               de la columna.--> 
               <div class="col-4 text-end">
                 <strong> ${{subTotal}}</strong>
               </div>
             </div>
-           <!--Este botón con el texto "confirmar compra" que se centra en el medio de la
-            página.Cuando se hace clic en el botón, desencadena la función "MakeSale ()".--> 
+           <!-- Llama a la funciòn makeSale, mediante el evento click, 
+            la funciòn muestra un simple mensaje que confirma la compra --> 
             <div class="row">
                 <div class="col-12 text-center">
                     <button class="btn btn-lg btn-success" (click)="makeSale()"> Confirmar Compra</button>

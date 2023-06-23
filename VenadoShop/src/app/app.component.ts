@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   cartProducts: any[] = [];
   subTotal: number = 0;
  /* El constructor inyecta dos dependencias: `Productservice` del tipo 'Productservice' y
-  `router` del tipo` Router '.Luego se suscribe al 'cartAddedSubject'  de
+  `router` del tipo` Router '.Despues se suscribe al 'cartAddedSubject'  de
   `Productservice` y llama al método` loadCart () `siempre que se agrega un nuevo elemento al carrito.Este
   se encarga  que el carrito siempre esté actualizado.*/
   constructor(private productService: ProductService, private router: Router) {
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   }
   
   /**
-   * Esta función redirige al usuario a la página de venta utiliza el enrutador .
+   * Esta función redirige al usuario a la página de venta utiliza el router .
    */
   redirectToSale() {
     this.router.navigateByUrl("/sale");

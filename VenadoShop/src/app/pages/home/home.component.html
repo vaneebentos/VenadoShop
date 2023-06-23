@@ -3,12 +3,39 @@
         <div class="row">
             <div class="col-12">
                 <div class="productHeading text-center">
-                    <h2 class="mb-3">Productos Exclusivos</h2> 
-                    <ul class="list-unstyled d-flex   justify-content-center ">
-                        <li><a href="#" class=" m-4  text-decoration-none text-danger fw-semibold  ">Nuevo</a></li>
-                        <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black">Mas Vendido</a></li>
-                        <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black ">Oferta</a></li>
-                    </ul>  
+                    <style>
+                        .custom-title {
+                          font-family: "Arial", sans-serif; /* Cambia la fuente o estilo de letra deseado */
+                          color: rgb(238, 255, 0); /* Cambia el color del titulo*/
+                        }
+                      </style>
+                      
+                      <h2 class="mb-3">
+                        <span class="custom-title">Productos Exclusivos</span>
+                      </h2>
+                 
+                    <style>
+                        .list-unstyled li a {
+                          color: rgb(226, 20, 20);
+                          text-decoration: none;
+                          font-weight: normal;
+                          font-size: 60px; /* Ajusta el tamaño de fuente  */
+                          transition: font-size 0.3s; /* Agrega una transición suave al cambiar el tamaño de fuente */
+                        }
+                      
+                        .list-unstyled li a:hover {
+                          color: green;
+                          font-weight: bold;
+                          font-size: 50px; /* Ajusta el tamaño de fuente al pasar el mouse sobre el titulo */
+                          background-color: yellow; /* Agrega el color de fondo al pasar el mouse */
+                        }
+                      </style>
+                         <!-- Crear una lista desordenada con un elemento de lista único que contiene un hipervínculo
+                    con el texto "oferta".-->
+                      <ul class="list-unstyled d-flex justify-content-center">
+                        <li><a href="#" class="m-4 text-decoration-none fw-semibold">OFERTA</a></li>
+                      </ul>
+                      
                 </div>
             </div>
             <div class="col-12">
@@ -21,7 +48,7 @@
                     <div class="col-lg-3 pt-2 " *ngFor="let product of productList">
                         <div class="box-shadow">
                             <div class="card">
-                                        <!--  binding de la propiedad productImageUrl (imagen) de lista de productos (productList), permite acceder dinámicamente a las imagenes de la lista-->
+                                    <!--  binding de la propiedad productImageUrl (imagen) de lista de productos (productList), permite acceder dinámicamente a las imagenes de la lista-->
                                 <img class="img-fluid" style="height: 200px;" [src]="product.productImageUrl" class="card-img-top p-2"
                                     alt="...">
                                 <div class="card-body">
@@ -44,6 +71,9 @@
                                                 style="color: #f1f50f;"></i> 
                                                 <span class="text-muted">(21)</span>
                                         </div>
+                                      <!-- Este código está creando un botón (agregar al carrito)
+                                        Cuando se hace clic en el botón, agrega el producto seleccionado a una compra.
+                                         actualiza la cantidad del producto en el carrito.-->
                                         <div class="col-6">
                                             <button class="btn btn-sm btn-success" (click)="addItemToCart(product.productId)"> Añadir al carrito</button>
                                         </div>

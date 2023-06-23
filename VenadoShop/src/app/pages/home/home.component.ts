@@ -10,8 +10,8 @@ export class HomeComponent implements OnInit{
   // 2 EL FOR RECORRE ESTO
   productList: any [] = [];
 
- /* `CartoBj` es un objeto que representa un elemento de carrito.Tiene propiedades como `Cartid`,` custid`,
- `Productid`,` cantidad 'y `date'.Estas propiedades se utilizan para agregar un producto al carrito al
+ /* `CartoBj` es un objeto que representa un elemento de carrito.Tiene propiedades como `CartId`,` CustId`,
+ `ProductId`.Estas propiedades se utilizan para agregar un producto al carrito al
  asignar el parámetro `ProductId` a la propiedad` productId` de 'cartObj` y pasarlo al
  Método `AddTocart` de la clase 'Productservice`.
  */

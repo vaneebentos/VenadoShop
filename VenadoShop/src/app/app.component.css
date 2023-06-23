@@ -1,28 +1,9 @@
-
-.textBlur {
-    color: transparent;
-    text-shadow: 0 0 1px #202122;
-}
-
-.navbar {
-    box-shadow: none;
-}
-
-
-
+/* en esta parte del codigo es el estilo de la barra desplegable donde se encuentra,
+ el producto seleccionado, el precio de cada uno de ellos y la opcion de ver el carrito de las compras  */
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
-
-}
-
-.box-shadow {
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
- 
+} 
 .dropdown-menu{
     top: 100%;
     left: unset !important;

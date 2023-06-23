@@ -7,9 +7,9 @@ import { Observable, Subject } from 'rxjs';
 })
 export class ProductService {
 
-/* `public CartadDedSubject` es una propiedad de la clase 'Productservice' que crea una nueva instancia de
-La clase `Subject 'con un parámetro de tipo booleano.Este tema se puede utilizar para emitir eventos y
-Notifique a los suscriptores cuando se agrega un producto al carrito.El `CartaddedSubject` se puede suscribirse a
+/* `public cartAddedSubject ` es una propiedad de la clase 'Productservice' que crea una nueva instancia de
+La clase `Subject 'con un parámetro de tipo booleano,se usa para emitir eventos y
+notifique a los suscriptores cuando se agrega un producto al carrito.El `cartAddedSubject ` se puede suscribir
 en otros componentes o servicios para recibir actualizaciones cuando se agrega un producto al carrito.*/
   public cartAddedSubject = new Subject<boolean>();
 
@@ -17,9 +17,8 @@ en otros componentes o servicios para recibir actualizaciones cuando se agrega u
 * Esta es una función de constructor que toma en una instancia de la clase HttpClient como parámetro y
  * lo asigna a una propiedad privada.
  * @param {httpclient} http - el parámetro `http` es una instancia de la clase` httpclient`, que es
- * Se utiliza para realizar solicitudes HTTP en aplicaciones angulares.Le permite enviar solicitudes a un servidor y
- * Reciba respuestas en una variedad de formatos, como JSON, XML o texto plano.La clase `httpclient`
- * proporciona
+ * Se utiliza para realizar solicitudes HTTP en aplicaciones de angular.Le permite enviar solicitudes a
+ *  un servidor y recibir respuestas en una variedad de formatos, como JSON, XML o texto plano.
  */
   constructor(private http: HttpClient) { }
 

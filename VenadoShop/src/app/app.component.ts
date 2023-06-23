@@ -11,21 +11,35 @@ export class AppComponent implements OnInit {
   title = 'ecommerce';
   cartProducts: any[] = [];
   subTotal: number = 0;
+ /* El constructor inyecta dos dependencias: `Productservice` del tipo 'Productservice' y
+  `enrutador` del tipo` enrutador '.Luego se suscribe al 'cartAddedSubject'  de
+  `Productservice` y llama al método` LoadCart () `siempre que se agrega un nuevo elemento al carrito.Este
+  Asegura que el carrito siempre esté actualizado con los últimos cambios.*/
   constructor(private productService: ProductService, private router: Router) {
     this.productService.cartAddedSubject.subscribe(res=> {
       this.loadCart();
     })
   }
 
+ /**
+  ngOnInit carga el carrito.
+  */
   ngOnInit(): void {
     this.loadCart();
   }
   
+  /**
+   * Esta función redirige al usuario a la página de venta utiliza el enrutador .
+   */
   redirectToSale() {
     this.router.navigateByUrl("/sale");
   }
 
   loadCart() {
+  /* Este código está cargando los elementos del carrito para un cliente específico (ID de cliente 1) utilizando el
+   `getCartItemsByCustId()` Método del 'Productservice'.Luego calcula el subtotal de todos
+    los productos en el carrito iterando a través del array de `CartProducts` y sumando el valor
+    de  `ProductPrice` de cada elemento.El subtotal se almacena en la variable `subtotal`.*/
     this.subTotal = 0;
     this.productService.getCartItemsByCustId(1).subscribe((res: any)=> {
       this.cartProducts = res.data;

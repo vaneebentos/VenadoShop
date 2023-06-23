@@ -8,13 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'ecommerce';
+  title = 'Venado Shop';
   cartProducts: any[] = [];
   subTotal: number = 0;
  /* El constructor inyecta dos dependencias: `Productservice` del tipo 'Productservice' y
-  `enrutador` del tipo` enrutador '.Luego se suscribe al 'cartAddedSubject'  de
-  `Productservice` y llama al método` LoadCart () `siempre que se agrega un nuevo elemento al carrito.Este
-  Asegura que el carrito siempre esté actualizado con los últimos cambios.*/
+  `router` del tipo` Router '.Luego se suscribe al 'cartAddedSubject'  de
+  `Productservice` y llama al método` loadCart () `siempre que se agrega un nuevo elemento al carrito.Este
+  se encarga  que el carrito siempre esté actualizado.*/
   constructor(private productService: ProductService, private router: Router) {
     this.productService.cartAddedSubject.subscribe(res=> {
       this.loadCart();

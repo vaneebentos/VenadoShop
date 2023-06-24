@@ -14,22 +14,6 @@
                         <span class="custom-title">Productos Exclusivos</span>
                       </h2>
                  
-                    <style>
-                        .list-unstyled li a {
-                          color: rgb(226, 20, 20);
-                          text-decoration: none;
-                          font-weight: normal;
-                          font-size: 60px; /* Ajusta el tamaño de fuente  */
-                          transition: font-size 0.3s; /* Agrega una transición suave al cambiar el tamaño de fuente */
-                        }
-                      
-                        .list-unstyled li a:hover {
-                          color: green;
-                          font-weight: bold;
-                          font-size: 50px; /* Ajusta el tamaño de fuente al pasar el mouse sobre el titulo */
-                          background-color: yellow; /* Agrega el color de fondo al pasar el mouse */
-                        }
-                      </style>
                          <!-- Crear una lista desordenada con un elemento de lista único que contiene un hipervínculo
                     con el texto "oferta".-->
                       <ul class="list-unstyled d-flex justify-content-center">
@@ -57,8 +41,16 @@
                                     <h5 class="card-title">{{product.productName}}</h5>
                                     <p class="card-text">
                                         <!-- interpolación del precio del producto y del precio ficticio anterior. -->
-                                        <span class="text-danger fw-semibold me-2">${{product.productPrice}}</span><del> ${{product.productPrice}}684844</del>
-                                        <span class="text-success ms-2">999% Off</span></p>
+                                        <span class="text-danger fw-semibold me-2">${{product.productPrice}}</span>
+                                        <!-- se muestra precio anterior tachado -->
+                                        <!-- 
+                                        muestra el precio original del producto con una línea a través de él,
+                                        indicando que está a la venta por un precio con descuento.
+                                        El precio sin descuento se calcula multiplicando el precio original
+                                        de (`Product.ProductPrice`) por 1.25. (25%) -->
+                                        <del> ${{product.productPrice*1.25}}</del>
+                                       <!-- Displaying the discount percentage (25% off) for the product. -->
+                                        <span class="text-success ms-2">25% Off</span></p>
                                      
                                         <!-- agregamos una review basada en stars y una cantidad de reviews -->
                                     <div class="row">

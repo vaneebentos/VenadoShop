@@ -1,0 +1,15 @@
+
+.list-unstyled li a {
+  color: rgb(226, 20, 20);
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 60px; /* Ajusta el tamaño de fuente  */
+  transition: font-size 0.3s; /* Agrega una transición suave al cambiar el tamaño de fuente */
+}
+
+.list-unstyled li a:hover {
+  color: green;
+  font-weight: bold;
+  font-size: 50px; /* Ajusta el tamaño de fuente al pasar el mouse sobre el titulo */
+  background-color: yellow; /* Agrega el color de fondo al pasar el mouse */
+}

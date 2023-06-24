@@ -4,12 +4,35 @@
     display: block;
     margin-top: 0;
 } 
+/* Este código CSS está posicionando el elemento del menú desplegable que aparece al pasar el mouse sobre el menú */
 .dropdown-menu{
+   /* La propiedad  `Top: 100%;` está posicionando el elemento del menú desplegable en la parte inferior de su
+   elemento principal.Específicamente, está configurando el borde superior del menú desplegable
+   nivel como el borde inferior de su elemento principal.Esto hace que el menú desplegable aparezca directamente
+   debajo del elemento principal cuando se abre.*/
     top: 100%;
+   /* `left: unset! IMPORTANTE;` Restablece la propiedad 'izquierda' del elemento '.dropdown-Menu` a
+    Su valor predeterminado, que es 'Auto`.La palabra clave `! Importante` se usa para anular cualquier otro CSS
+    Reglas que pueden haber establecido la propiedad 'izquierda'.Esto asegura que la propiedad 'izquierda' no esté establecida en
+    Un valor específico, que permite que el elemento se coloque en función de su comportamiento predeterminado.*/
     left: unset !important;
+    /* `Unset` es una palabra clave CSS que restablece una propiedad a su valor predeterminado.
+    En este caso, `left: Unset` restablece la propiedad 'left' del elemento '.dropdown-Menu` a su valor predeterminado
+    Valor, que es 'Auto`.Esto permite que el elemento se coloque en función de su valor predeterminado
+    comportamiento, en lugar de ser establecido en un valor específico por otras reglas de CSS.*/
+    
+    /* `right: 0px! IMPORTANTE;` está configurando la posición correcta del menú desplegable a 0 píxeles desde el
+    borde derecho de su contenedor.La palabra clave `! Importante` se usa para anular cualquier otra regla de CSS
+    Eso puede haberse establecido para la propiedad 'correcta', asegurando que se aplique este valor específico.*/
     right: 0px !important;
+    /* `margin-top: var (-bs-drown-spacer);` está configurando el margen en la parte superior del menú desplegable
+    al valor de la variable CSS `--BS-Dropdown-Spacer`.Es probable que esta variable esté definida
+    en otra parte del código CSS y se utiliza para proporcionar un espacio constante entre los menús desplegables y
+    sus elementos principales.*/
     margin-top: var(--bs-dropdown-spacer);
 }
+/* Configuración del ancho del elemento con la clase "CartContainer" a 300 px y agregando un relleno
+de 5 px al contenido dentro del elemento.*/
 .CartContainer {
     width: 300px;
     padding: 5px;

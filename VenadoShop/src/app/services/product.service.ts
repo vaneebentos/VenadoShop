@@ -35,7 +35,7 @@ actualizaciones cuando se agrega un producto al carrito.*/
 
  /**
   * Esta función envía una solicitud HTTP POST para agregar un elemento al carrito en un sitio web de comercio electrónico.
-  * @param {any} obj: el parámetro "obj" es de tipo "any" y es el objeto que contiene los datos a
+  * @param {any} obj: el parámetro "obj" es de tipo "any" y es el objeto que contiene los datos 
   * se enviará en la HTTP POST request a la URL especificada.Podría ser cualquier tipo de objeto, pero
   * Debería estar en el formato esperado por el endpoint.
   * @returns Se está devolviendo un tipo de tipo `Any`.
@@ -45,12 +45,11 @@ actualizaciones cuando se agrega un producto al carrito.*/
     return this.http.post<any>("http://onlinetestapi.gerasim.in/api/Ecomm/AddToCart",obj);
   }
 
-/* Esta es una función en la clase 'Productservice` que recupera los artículos del carrito por ID de cliente a través de un
-Http obtenga solicitud.Se necesita en un parámetro `custId`, que es number utilizado para identificar un
-Cliente en un sistema de comercio electrónico.La función se utiliza para recuperar todos los artículos en el cart component mediante su id.Devuelve una observable de una array de cualquier tipo.*/
+
 /**
  * Esta función recupera los elementos del carrito por ID del cliente a través de una solicitud HTTP GET.
- * @param {number} custid: la identificación del cliente es un número que se utiliza para identificar a un cliente específico en un ecommerce .Esta función se utiliza para recuperar todos los artículos en el cart component.
+ * @param {number} custid: la identificación del cliente es un número que se utiliza para identificar a un cliente específico en un ecommerce .
+ * Esta función se utiliza para recuperar todos los artículos en el cart component.
  * @returns una observable de una array de cualquier tipo de datos.
  */
   getCartItemsByCustId(custId: number) : Observable<any[]>  {

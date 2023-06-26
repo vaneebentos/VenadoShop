@@ -11,12 +11,12 @@
    nivel como el borde inferior de su elemento principal.Esto hace que el menú desplegable aparezca directamente
    debajo del elemento principal cuando se abre.*/
     top: 100%;
-   /* `left: unset! IMPORTANTE;` Restablece la propiedad 'izquierda' del elemento '.dropdown-Menu` a
-    Su valor predeterminado, que es 'Auto`.La palabra clave `! Importante` se usa para anular cualquier otro CSS
+   /* `left: unset! IMPORTANTE;` Restablece la propiedad 'left' del elemento '.dropdown-Menu` a
+    Su valor predeterminado, que es 'auto`.La palabra clave `! Importante` se usa para anular cualquier otro CSS
     Reglas que pueden haber establecido la propiedad 'izquierda'.Esto asegura que la propiedad 'izquierda' no esté establecida en
     Un valor específico, que permite que el elemento se coloque en función de su comportamiento predeterminado.*/
     left: unset !important;
-    /* `Unset` es una palabra clave CSS que restablece una propiedad a su valor predeterminado.
+    /* `unset` es una palabra clave CSS que restablece una propiedad a su valor predeterminado.
     En este caso, `left: Unset` restablece la propiedad 'left' del elemento '.dropdown-Menu` a su valor predeterminado
     Valor, que es 'Auto`.Esto permite que el elemento se coloque en función de su valor predeterminado
     comportamiento, en lugar de ser establecido en un valor específico por otras reglas de CSS.*/

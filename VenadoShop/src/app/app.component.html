@@ -3,7 +3,7 @@
  -->
 
   <!-- NavBar -->
-<!-- Aca se  crea una barra de navegación 
+  <!-- Aca se  crea una barra de navegación 
   que,incluye una clase de estilo personalizado llamada
   "Custom-color" que establece el color del texto en un gris oscuro.->-->
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-top ">
@@ -13,42 +13,42 @@
           color: rgb(8, 8, 8);
         }
       </style>
-      
-     <!-- Creando un logotipo de marca para la barra de navegación con el texto "Venadoshop" y un ícono de un
+
+      <!-- Creando un logotipo de marca para la barra de navegación con el texto "Venadoshop" y un ícono de un
       carrito de compras.El icono tiene un color rojo.-->
       <a class="navbar-brand fs-2 fw-bold" href="#">
         <i class="fa fa-cart-shopping fs-2" style="color: #b60404;"></i>
         <span class="custom-color">VenadoShop</span>
       </a>
       <!-- Nav Items -->
-     
-    <!--Este código está creando un menú desplegable para la barra de navegación.Incluye un elemento de lista con un
+
+      <!--Este código está creando un menú desplegable para la barra de navegación.Incluye un elemento de lista con un
      Menú desplegable que aparecerá cuando el usuario haga clic en él.El menú desplegable es actualmente
      vacío, pero se puede poblar con elementos o enlaces de lista adicionales.-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0  text-center ">
           <li class="nav-item dropdown fw-semibold text-uppercase text-black  me-1">
-            
+
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-             
+
             </ul>
           </li>
           <li class="nav-item dropdown">
-           
-          
+
+
           <li class="nav-item dropdown">
-           <!--Este código está creando un menú desplegable para el icono del carrito de compras en la barra de navegación.
+            <!--Este código está creando un menú desplegable para el icono del carrito de compras en la barra de navegación.
            Incluye una insignia que muestra la cantidad de elementos en el carrito (usando Angular
            interpolación con `{{CartProducts.length}}`).El menú desplegable aparecerá cuando el
-           El usuario hace clic en el icono del carrito.--> 
+           El usuario hace clic en el icono del carrito.-->
             <a class="nav-link dropdown-toggle cart fw-semibold text-uppercase text-black  me-1" href="#"
               id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa fa-cart-shopping fs-5" style="color: #ce0000;"></i>
               <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
-               {{cartProducts.length}}
+                {{cartProducts.length}}
               </span>
             </a>
-           <!-- Creando un menú desplegable para el icono del carrito de compras en la barra de navegación.Incluye un
+            <!-- Creando un menú desplegable para el icono del carrito de compras en la barra de navegación.Incluye un
             contenedor para los elementos del carrito, con un encabezado "Tu compras" y una fila para cada elemento en el
             Cart, mostrando la imagen del producto, el nombre, la cantidad y el precio.También calcula y
             Muestra el subtotal del carrito.-->
@@ -58,14 +58,15 @@
                   <div class="col-6">
                     Tus Compras
                   </div>
-                 
+
                 </div>
-              <!-- Este código está creando una fila para cada elemento en el array CartProducts usando *ngfor
+                <!-- Este código está creando una fila para cada elemento en el array CartProducts usando *ngfor
                 Directiva en angular.Muestra la imagen del producto en formato circular con un
                 Altura de 30 px y un radio de borde del 50%.-->
-                <div class="row pt-1" *ngFor="let cart of cartProducts"> 
+                <div class="row pt-1" *ngFor="let cart of cartProducts">
                   <div class="col-4">
-                    <img class="img-fluid" style="height: 30px;border-radius: 50%;" [src]="cart.productImageUrl" class="card-img-top" alt="Responsive image" >
+                    <img class="img-fluid" style="height: 30px;border-radius: 50%;" [src]="cart.productImageUrl"
+                      class="card-img-top" alt="Responsive image">
                   </div>
                   <div class="col-3">
                     {{cart.productName}}
@@ -74,10 +75,10 @@
                     {{cart.quantity + 1}}
                   </div>
                   <div class="col-2 text-end">
-                   {{ cart.productPrice}}
+                    {{ cart.productPrice}}
                   </div>
                 </div>
-               
+
                 <div class="row">
                   <div class="col-3">
 
@@ -86,13 +87,13 @@
                     <hr>
                   </div>
                 </div>
-               
+
                 <div class="row">
                   <div class="col-2">
-                     
+
                   </div>
                   <div class="col-2">
-                     
+
                   </div>
                   <div class="col-4">
                     <!-- Esta parte de la vista,muestra el subtotal de los elementos en el carrito.La primera línea
@@ -101,11 +102,11 @@
                     <div> <small> 2 items</small></div>
                   </div>
                   <div class="col-4 text-end">
-                    <strong> ${{subTotal}}</strong> 
+                    <strong> ${{subTotal}}</strong>
                   </div>
                 </div>
                 <div class="row">
-                 <!-- Este código está tiene un botón para redirigir al usuario a la página del carrito de compras cuando
+                  <!-- Este código está tiene un botón para redirigir al usuario a la página del carrito de compras cuando
                   haga clic en el .Se muestra en el menú desplegable del icono del carrito de compras en el
                   barra de navegación.El botón está diseñado con clases de bootstrap para tener un tamaño pequeño,
                   color verde y un tema de éxito.El `(click) =" redirecttosale () "` vinculante de eventos
@@ -113,18 +114,18 @@
                   <div class="col-12 text-end">
                     <button class="btn btn-sm btn-success" (click)="redirectToSale()">Ver Carrito</button>
                   </div>
-                </div> 
+                </div>
               </div>
-            </div> 
-          </li> 
-        </ul> 
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 </header>
 <section id="product">
   <div class="container">
-  <!-- Es una directiva en angular que se usa para representar el componente
+    <!-- Es una directiva en angular que se usa para representar el componente
   asociado con la ruta actual.Actúa como marcador de posición donde el componente se basa en
   en la URL actual.En este código, se utiliza para representar el componente del producto en la sección con
   ID "Producto".-->

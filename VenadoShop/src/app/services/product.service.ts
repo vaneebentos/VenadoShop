@@ -2,12 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
+/* `@Injectable({ providedIn: 'root' })` es un decorador en angular que permite que el servicio sea
+proporcionado en el  de la aplicación.Esto significa que el servicio está disponible para todos
+componentes y módulos en la aplicación sin la necesidad de configuración adicional.Es un
+forma abreviada de registrar un servicio con el inyector raíz.*/
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-/* `public cartAddedSubject ` es una propiedad de la clase 'Productservice' que crea una nueva instancia de
+/* `public cartAddedSubject ` esñ una propiedad de la clase 'Productservice' que crea una nueva instancia de
 La clase `Subject 'con un parámetro de tipo booleano,se usa para emitir eventos y
 notificar  a los suscriptores cuando se agrega un producto al carrito.
 El `cartAddedSubject ` se puede suscribir en otros componentes o servicios para recibir 

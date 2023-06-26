@@ -4,17 +4,35 @@
   <meta charset="utf-8">
   <title>VenadoShop</title>
   <base href="/">
+<!-- 
+Establezca el ancho de la vista en el ancho del dispositivo y establezca el nivel de zoom inicial cuando el
+La página se carga primero.Esto es importante para garantizar que el sitio web se muestre correctamente en
+Diferentes dispositivos con diferentes tamaños de pantalla y resoluciones.-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Vinculación con el archivo favicon.ico, que es un pequeño icono que aparece en la pestaña del navegador y los marcadores
+bar.El atributo `rel` especifica la relación entre el documento actual y el vinculado
+Documento, en este caso, es un icono.El atributo `type` especifica el tipo del vinculado
+documento, y el atributo `href` especifica la URL del documento vinculado. -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<!-- Vinculación con un archivo de hoja de estilo ubicado en la URL especificada que contiene la biblioteca de Font Awesome
+icono.El atributo `integrity 'proporciona una medida de seguridad para garantizar que el archivo no haya sido
+manipulado, mientras que el atributo `Crossorigin` especifica que el archivo debe recuperarse con
+Cors (intercambio de recursos de origen cruzado) habilitado.El atributo `referRerPolicy` especifica cómo
+El navegador debe enviar el encabezado `referente` al recuperar el archivo.-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
   integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Vinculación con un archivo de hoja de estilo ubicado en la URL especificada, que contiene el icono de la biblioteca font awsome.El atributo `integrity 'proporciona una medida de seguridad para garantizar que el archivo no haya sido
+manipulado con, mientras que el atributo `Crossorigin` especifica que el archivo debe recuperarse con Cors
+(Intercambio de recursos de origen cruzado) habilitado.El atributo `referRerPolicy` especifica cómo el navegador
+debe enviar el encabezado `referente` al obtener el archivo. -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+<!-- un elemento que Angular usa para arranque la raízcomponente de la aplicación.El componente raíz es el punto de partida de la aplicación y es responsable de representar toda la aplicación.-->
   <app-root></app-root>
 </body>
 </html>

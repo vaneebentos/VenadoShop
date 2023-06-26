@@ -33,9 +33,9 @@ export class HomeComponent implements OnInit{
   /**
    
    * 3 SE EJECUTA ESTA FUNCIÓN
-  * The function loads all products by subscribing to the getAllProducts method of the productService
-   * and assigning the result to the productList variable.
-   * carga todos los productos mediante getAllProducts   */
+   * La función carga todos los productos suscribiéndose al método GetAllProducts del servicio de productos
+   * y asignando el resultado a la variable ProductList.
+   * CARGA TODOS LOS PRODUCTOS MEDIANTE GetAllProducts */
   loadAllProducts() {
     this.productService.getAllProducts().
     subscribe((result: any)=>{

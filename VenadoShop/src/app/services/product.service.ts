@@ -11,7 +11,7 @@ forma abreviada de registrar un servicio con el inyector raíz.*/
 })
 export class ProductService {
 
-/* `public cartAddedSubject ` esñ una propiedad de la clase 'Productservice' que crea una nueva instancia de
+/* `public cartAddedSubject ` es una propiedad de la clase 'Productservice' que crea una nueva instancia de
 La clase `Subject 'con un parámetro de tipo booleano,se usa para emitir eventos y
 notificar  a los suscriptores cuando se agrega un producto al carrito.
 El `cartAddedSubject ` se puede suscribir en otros componentes o servicios para recibir 

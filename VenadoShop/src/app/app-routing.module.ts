@@ -13,8 +13,7 @@ const routes: Routes = [
     component: HomeComponent
   },
 /* Este bloque de código está definiendo tres rutas adicionales para la aplicación.Cuando el usuario navega
-A la ruta "/Productos", se mostrará el Homecomponent.Cuando el usuario navega al "/carrito"
-ruta, se mostrará el CartComponent.Cuando el usuario navega a la ruta "/venta", 
+A la ruta "/Productos", se mostrará el Homecomponent.Cuando el usuario navega a la ruta "/venta", 
 Se mostrará salecomponente.*/
   {
     path: 'products',
@@ -26,6 +25,8 @@ Se mostrará salecomponente.*/
   }
 ];
 
+/* Esta es la clase ProbilizingModule que importa y exporta el RouterModule para el enrutamiento en un
+Aplicación angular .*/
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
